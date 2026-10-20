@@ -8,7 +8,7 @@
 // Trang gốc "/" không liệt kê ai, để không ai mở nhầm thư của người khác.
 // ============================================================
 
-/** wide: ảnh ngang trải hết chiều rộng trong hộp ký ức (ví dụ tranh nhiều khung) */
+/** wide: ảnh ngang — khung ngang trong phần kỷ niệm, trải hết chiều rộng trong hộp ký ức */
 export type Memory = { src: string; caption: string; wide?: boolean }
 
 export type Recipient = {
@@ -100,9 +100,23 @@ export const recipients: Recipient[] = [
     accent: '#7f8a63',
     cover: 'images/ba-noi-5.jpg',
     memories: [
+      { src: 'images/ba-noi-7.jpg', caption: 'Ngày Xoài chào đời' },
+      { src: 'images/ba-noi-8.jpg', caption: 'Bế cháu những ngày đầu' },
       { src: 'images/ba-noi-1.jpg', caption: 'Bà ru Xoài ngủ' },
+      { src: 'images/ba-noi-6.jpg', caption: 'Hai bà cháu nghỉ trưa' },
+      { src: 'images/ba-noi-12.jpg', caption: 'Đầy tháng Xoài', wide: true },
+      { src: 'images/ba-noi-9.jpg', caption: 'Tết đầu tiên của Xoài' },
+      { src: 'images/ba-noi-10.jpg', caption: 'Cả nhà đón Tết', wide: true },
+      { src: 'images/ba-noi-11.jpg', caption: 'Tết ở nhà nội', wide: true },
+      { src: 'images/ba-noi-13.jpg', caption: 'Ngủ ngon trong lòng bà' },
+      { src: 'images/ba-noi-15.jpg', caption: 'Bà bế Xoài quanh nhà' },
+      { src: 'images/ba-noi-16.jpg', caption: 'Theo bà khắp nhà' },
       { src: 'images/ba-noi-2.jpg', caption: 'Hai bà cháu chơi đồ chơi' },
       { src: 'images/ba-noi-3.jpg', caption: 'Xoài trong vòng tay bà' },
+      { src: 'images/ba-noi-18.jpg', caption: 'Lúc nào cũng có bà' },
+      { src: 'images/ba-noi-17.jpg', caption: 'Xoài lớn rồi' },
+      { src: 'images/ba-noi-20.jpg', caption: 'Ngày vui của Xoài' },
+      { src: 'images/ba-noi-19.jpg', caption: 'Bữa cơm cả nhà', wide: true },
       { src: 'images/ba-noi-4.jpg', caption: 'Sinh nhật bà' },
       { src: 'images/ba-noi-5.jpg', caption: 'Bà trong tà áo dài' },
     ],
@@ -130,9 +144,9 @@ export const recipients: Recipient[] = [
       collage: [
         { src: 'images/ba-noi-tranh.jpg', caption: 'Bà và Xoài, qua từng tháng', wide: true },
         { src: 'images/ba-noi-1.jpg', caption: 'Những ngày đầu' },
-        { src: 'images/ba-noi-2.jpg', caption: 'Chơi cùng bà' },
-        { src: 'images/ba-noi-3.jpg', caption: 'Bà bế' },
-        { src: 'images/ba-noi-4.jpg', caption: 'Sinh nhật' },
+        { src: 'images/ba-noi-9.jpg', caption: 'Tết đầu tiên' },
+        { src: 'images/ba-noi-17.jpg', caption: 'Xoài lớn rồi' },
+        { src: 'images/ba-noi-4.jpg', caption: 'Sinh nhật bà' },
       ],
       heading: 'Điều chúng con mong',
       text: [

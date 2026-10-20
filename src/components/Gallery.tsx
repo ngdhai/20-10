@@ -43,7 +43,7 @@ export function Gallery({ memories }: { memories: Memory[] }) {
         onPointerCancel={endDrag}
       >
         {memories.map((m, i) => (
-          <figure key={i} className="film" style={{ '--i': i } as React.CSSProperties}>
+          <figure key={i} className={m.wide ? 'film is-wide' : 'film'} style={{ '--i': i } as React.CSSProperties}>
             <Photo src={m.src} alt={m.caption} />
             <figcaption>{m.caption}</figcaption>
           </figure>
