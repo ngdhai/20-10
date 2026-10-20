@@ -1,0 +1,7 @@
+node_modules
+dist
+.DS_Store
+.vercel
+# ảnh gốc (nặng, còn EXIF/GPS) — website dùng bản đã nén trong public/images
+src/ba-noi/
+src/ba-ngoai/
