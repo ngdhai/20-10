@@ -15,6 +15,8 @@ export type Recipient = {
   id: string
   /** Mã trong đường link riêng: /<code>. Đổi thành chuỗi khó đoán bất kỳ. */
   code: string
+  /** Mô tả hiện dưới link khi gửi qua Zalo/Facebook */
+  preview: string
   /** Vai trong gia đình */
   role: string
   /** Tên riêng */
@@ -91,6 +93,7 @@ export const recipients: Recipient[] = [
   {
     id: 'grandma-paternal',
     code: 'bfz9p5',
+    preview: 'Gửi người phụ nữ đảm đang của nhà mình — từ bố mẹ Xoài và Xoài.',
     role: 'Bà nội',
     name: 'Lành',
     tagline: 'Người phụ nữ của gia đình.',
@@ -142,6 +145,7 @@ export const recipients: Recipient[] = [
   {
     id: 'grandma-maternal',
     code: 'rcv7ya',
+    preview: 'Gửi bà, người đã đỡ đần bố mẹ Xoài rất nhiều — từ bố mẹ Xoài và Xoài.',
     role: 'Bà ngoại',
     name: 'Hường',
     tagline: 'Bà thương con cháu.',
@@ -194,6 +198,7 @@ export const recipients: Recipient[] = [
   {
     id: 'wife',
     code: 'jyjmhr',
+    preview: 'Một món quà nhỏ anh làm riêng cho em nhân ngày 20/10.',
     role: 'Vợ',
     name: 'Thu Hà',
     tagline: 'Người cùng anh tạo nên gia đình của riêng mình.',
@@ -229,6 +234,7 @@ export const recipients: Recipient[] = [
   {
     id: 'sister-in-law',
     code: 'zw5hmf',
+    preview: 'Một món quà nhỏ anh rể gửi Linh nhân ngày 20/10.',
     role: 'Em vợ',
     name: 'Diệu Linh',
     tagline: 'Người làm cả nhà ồn ào hơn — theo nghĩa dễ thương.',
